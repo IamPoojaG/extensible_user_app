@@ -9,12 +9,15 @@ export const createUser = (data: any) =>
     body: JSON.stringify(data),
   });
 
-export const updateUser = (id: number, data: any) =>
-  apiRequest(`/users/${id}`, {
+export const updateUser = (id: number, data: any) => {
+
+  return apiRequest(`/users/${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
   });
+};
+
 
 export const deleteUser = (id: number) =>
   apiRequest(`/users/${id}`, { method: "DELETE" });

@@ -20,6 +20,7 @@ export default function UsersPage() {
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
       <DynamicForm
+        key={editing?.id ?? "create"}
         schema={USER_FORM_SCHEMA}
         defaultValues={editing || {}}
         onSubmit={submit}

@@ -17,20 +17,20 @@ export default function UserList({ users, onEdit, onDelete }: Props) {
                 <p key={k} className="text-sm">
                   <b>{k}</b>: {String(v)}
                 </p>
-              ) : null
+              ) : null,
             )}
           </div>
 
           <div className="flex gap-2">
             <button
               onClick={() => onEdit(u)}
-              className="px-3 py-1 bg-yellow-500 text-white rounded"
+              className="px-3 py-1 bg-yellow-500 text-white rounded cursor-pointer"
             >
               Edit
             </button>
             <button
               onClick={() => onDelete(u.id!)}
-              className="px-3 py-1 bg-red-500 text-white rounded"
+              className="px-3 py-1 bg-red-500 text-white rounded cursor-pointer"
             >
               Delete
             </button>
