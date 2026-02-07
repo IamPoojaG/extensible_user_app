@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "firstName": "Rahul",
+      "lastName": "Verma",
+      "phone": "9123456780",
+      "email": "rahul@gmail.com"
+    },
+    {
+      "firstName": "Pooja",
+      "lastName": "palankar",
+      "email": "poojagdeveloper@gmail.com",
+      "phone": "8987656770",
+      "id": 3
+    }
+  ]
+}
